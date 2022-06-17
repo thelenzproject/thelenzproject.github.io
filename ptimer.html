@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link rel ="stylesheet" type="text/css" href="index.css">
+<html>
+  <title>The LENZ Project</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <head>
+    <div class="navbar">
+      <img id="logo" src="icon.png">
+      <h3><strong>The LENZ Project</strong></h3>
+      <a href="index.html"> Home</a>
+      <a href="tasklist.html"> Task List </a>
+      <a class="active" href="ptimer.html"> Productivity Timer </a>
+      <a href="tutorials.html"> Tutorials </a>
+      <a href="practices.html"> Practices </a>
+      <a href="weekly.html"> Weekly Challenge </a>
+      <a href="aboutus.html"> About Us </a>
+    </div>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <input type="text" id="userInput"=>give me input</input>
+    <button onclick="test()">Submit</button>
+    <script>
+            function test()
+            {
+                var m = document.getElementById("userInput").value;
+                var countDownDate = new Date(2023,m,1,1,0,0,0).getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
+            }
+                
+        </script>
+  </body>
+</html> 

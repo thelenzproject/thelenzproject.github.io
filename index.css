@@ -1,0 +1,61 @@
+body{
+  background-color: #000000;
+  margin:0;
+}
+  
+
+h3{
+  color : white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  float:left;
+  margin-right : 10px;
+  margin-top:12px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+
+.navbar a {
+  float: left;
+  font-family :Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #5C80BC;
+  color : black;  
+}
+
+.active {
+  color : black;
+  background-color: #355282;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+#copy{
+  color : white;
+}
+
+#logo{
+  max-width: 3%;  
+  float:left;
+  height: auto;  
+  margin:0;
+}
+
+p{
+    color:white;
+}
