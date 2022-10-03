@@ -9,6 +9,7 @@ h3{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   float:left;
   margin-right : 10px;
+    margin-bottom: 0;
   margin-top:12px;
 }
 
@@ -50,7 +51,7 @@ h3{
 }
 
 #logo{
-  max-width: 3%;  
+  max-width: 2.5%;  
   float:left;
   height: auto;  
   margin:0;

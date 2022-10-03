@@ -10,6 +10,7 @@ h3{
   float:left;
   margin-right : 10px;
   margin-top:12px;
+    margin-bottom: 0;
 }
 
 .navbar {
@@ -39,6 +40,20 @@ h3{
   background-color: #355282;
 }
 
+#thing{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  color : white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#total{
+  margin-left : 32%;
+  margin-top : 5%;
+  margin-bottom : 5%;
+}
+
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
@@ -50,7 +65,7 @@ h3{
 }
 
 #logo{
-  max-width: 3%;  
+  max-width: 2.5%;  
   float:left;
   height: auto;  
   margin:0;
